@@ -4583,7 +4583,8 @@ WIDGETS.latin = (it, param) => {
 const DATA = JSON.parse(document.getElementById('course-data').textContent);
 const LECS = DATA.lectures;
 const MACROS = { '\\N': '\\mathbb{N}', '\\Z': '\\mathbb{Z}', '\\Q': '\\mathbb{Q}', '\\R': '\\mathbb{R}', '\\C': '\\mathbb{C}', '\\F': '\\mathbb{F}',
-  '\\PP': '\\mathcal{P}', '\\Val': '\\operatorname{Val}', '\\id': '\\operatorname{id}', '\\1': '\\mathbb{1}', '\\nset': '\\underline{#1}' };
+  '\\PP': '\\mathcal{P}', '\\Val': '\\operatorname{Val}', '\\id': '\\operatorname{id}', '\\1': '\\mathbb{1}', '\\nset': '\\underline{#1}',
+  '\\emph': '\\textit{#1}' };
 
 const store = {
   get(k, d) { try { const v = localStorage.getItem('mm5023.' + k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },
